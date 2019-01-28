@@ -25,6 +25,10 @@
   height: 100vh;
   margin: 0;
 }
+.container{
+  margin: 0 auto;
+  width: 980px;
+}
 body{
   margin: 0;
   padding: 0;
@@ -37,8 +41,10 @@ body *{
 footer{
   text-align: center;
 }
-
-a, a:hover, a:focus, a:visited{
+a{
+  color: #666;
+}
+a:hover, a:focus, a:visited{
   color: #41B883;
 }
 
@@ -52,4 +58,20 @@ a, a:hover, a:focus, a:visited{
 }
 .page-enter, .page-leave-active{
   opacity: 0
+}
+.mf-shang-hei-regular {
+    font-family: MFShangHei-Regular!important;
+}
+.arrow {
+  width: 4px;
+  height: 4px;
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+  transform: rotate(-45deg);
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -6px;
+  margin: auto;
 }
