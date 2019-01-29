@@ -31,6 +31,7 @@ header {
       display: inline-block;
       width: 54px;
       height: 36px;
+      vertical-align: top;
       background-position: -669px -748px;
       background-image: url(https://s0.meituan.net/bs/file/?f=fe-sso-fs:build/assets/sp-normal.2ee5c09.png);
       font-size: 0;

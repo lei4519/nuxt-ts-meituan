@@ -51,49 +51,45 @@
         </div>
         <div class="maoyan-area">
           <slider mode="slider">
-            <div>
-              <div class="slider-item" v-for="i in 5" :key="i">
-                <a href="javascript:;">
-                  <img
-                    src="//p1.meituan.net/movie/426f1f3f1b145f763b75a60c7c39c44a535093.jpg@267w_371h_1e_1c"
-                    class="image"
-                  >
-                  <img
-                    src="//s0.meituan.net/bs/fe-web-meituan/25e6614/img/imax3d.png"
-                    class="film-mark"
-                  >
-                  <div class="film-info">
-                    <p class="film-score">
-                      观众评
-                      <b>9.2</b>
-                    </p>
-                    <p class="film-name">大黄蜂</p>
-                    <span class="buy-ticket">购票</span>
-                  </div>
-                </a>
-              </div>
+            <div class="slider-item">
+              <a href="javascript:;" v-for="i in 5" :key="i">
+                <img
+                  src="//p1.meituan.net/movie/426f1f3f1b145f763b75a60c7c39c44a535093.jpg@267w_371h_1e_1c"
+                  class="image"
+                >
+                <img
+                  src="//s0.meituan.net/bs/fe-web-meituan/25e6614/img/imax3d.png"
+                  class="film-mark"
+                >
+                <div class="film-info">
+                  <p class="film-score">
+                    观众评
+                    <b>9.2</b>
+                  </p>
+                  <p class="film-name">大黄蜂</p>
+                  <span class="buy-ticket">购票</span>
+                </div>
+              </a>
             </div>
-            <div>
-              <div class="slider-item" v-for="i in 2" :key="i">
-                <a href="javascript:;">
-                  <img
-                    src="//p1.meituan.net/movie/426f1f3f1b145f763b75a60c7c39c44a535093.jpg@267w_371h_1e_1c"
-                    class="image"
-                  >
-                  <img
-                    src="//s0.meituan.net/bs/fe-web-meituan/25e6614/img/imax3d.png"
-                    class="film-mark"
-                  >
-                  <div class="film-info">
-                    <p class="film-score">
-                      观众评
-                      <b>9.2</b>
-                    </p>
-                    <p class="film-name">大黄蜂</p>
-                    <span class="buy-ticket">购票</span>
-                  </div>
-                </a>
-              </div>
+            <div class="slider-item">
+              <a href="javascript:;" v-for="i in 2" :key="i">
+                <img
+                  src="//p1.meituan.net/movie/426f1f3f1b145f763b75a60c7c39c44a535093.jpg@267w_371h_1e_1c"
+                  class="image"
+                >
+                <img
+                  src="//s0.meituan.net/bs/fe-web-meituan/25e6614/img/imax3d.png"
+                  class="film-mark"
+                >
+                <div class="film-info">
+                  <p class="film-score">
+                    观众评
+                    <b>9.2</b>
+                  </p>
+                  <p class="film-name">大黄蜂</p>
+                  <span class="buy-ticket">购票</span>
+                </div>
+              </a>
             </div>
           </slider>
         </div>
@@ -307,21 +303,21 @@ export default class Main extends Vue {}
     .slider {
       width: 1168px;
       .slider-item {
-        height: 297px;
-        width: 214px;
-        margin-right: 20px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        position: relative;
-        &:first-child {
-          margin-left: 10px;
-        }
-        &:last-child {
-          margin-right: 10px;
-        }
         > a {
-          display: block;
+          display: inline-block;
+          height: 297px;
+          width: 214px;
+          margin-right: 20px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: 50%;
+          position: relative;
+          &:first-child {
+            margin-left: 10px;
+          }
+          &:last-child {
+            margin-right: 10px;
+          }
           .image {
             width: 100%;
             border-radius: 4px;

@@ -156,11 +156,11 @@ export default class Slider extends Vue {
       }
     }
     &.slider {
-      font-size: 0;
-
-      > div,
+      white-space: nowrap;
+      letter-spacing: 0;
       .slider-item {
         display: inline-block;
+        letter-spacing: normal;
       }
     }
   }
@@ -170,6 +170,7 @@ export default class Slider extends Vue {
       transition: opacity 0.5s;
       opacity: 0;
       position: absolute;
+      z-index: 1;
     }
     .next {
       top: 50%;
